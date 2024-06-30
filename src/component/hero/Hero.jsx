@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./Hero.css";
 import arrow_btn from "../../assets/arrow_btn.png";
 import play_icon from "../../assets/play_icon.png";
@@ -38,7 +39,7 @@ const Hero = ({
         <div className="hero-play">
           <img
             src={playStatus ? pause_icon : play_icon}
-            onClick={() => setPlayStatus[!playStatus]}
+            onClick={() => setPlayStatus(!playStatus)}
           />
         </div>
       </div>

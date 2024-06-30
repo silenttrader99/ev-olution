@@ -6,7 +6,7 @@ import Navbar from "./component/navbar/Navbar";
 const App = () => {
   let heroData = [
     { text1: "Dive into", text2: "what you love" },
-    { text1: "Indulge", text2: " in your passion" },
+    { text1: "Indulge in", text2: "your passion" },
     { text1: "Give in to", text2: "your desire" },
   ];
 
@@ -24,6 +24,7 @@ const App = () => {
   return (
     <div>
       <Background playStatus={playStatus} heroCount={heroCount} />
+      <Navbar />
       <Hero
         heroData={heroData[heroCount]}
         playStatus={playStatus}
@@ -31,7 +32,6 @@ const App = () => {
         heroCount={heroCount}
         setHeroCount={setHeroCount}
       />
-      <Navbar />
     </div>
   );
 };
